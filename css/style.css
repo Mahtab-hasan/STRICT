@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+
+}
+header{
+    background-color: #f6f9f9;
+    /* padding: 5px; */
+
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-transform: uppercase;
+    margin-right: 14px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.nav-link:hover{
+    color: #15A4FA
+}
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.height{
+    min-height: 91vh;
+    align-items: center;
+}
+
+
+
+.banner h1{
+
+text-transform:  uppercase;
+
+color: #fff;
+
+font-size: 100px;
+
+margin: 0;
+}
+.banner p{
+
+color: #fff;
+
+font-size: 24px;
+
+margin: 30px 0 40px 0;
+}
+.banner span{
+    
+display: block;
+    
+height: 2px;
+    
+background-color: #15A4FA;
+}
+.btn-call{
+
+border: 1px solid;
+
+padding: 10px 30px;
+
+font-size: 24px;
+
+margin-top: 19px;
+
+color: #fff;
+
+border-color: #15A4FA;
+
+text-transform: capitalize;
+}
+.btn-call:hover{
+    background-color: #15A4FA;
+    color: #fff;
+}
+.icon{
+    
+color: #fff;
+    
+font-size: 25px;
+    
+position: absolute;
+    
+top: 80%;
+    
+left: 50%;
+    
+transform: translateX(-50%);
+animation: updown 0.5s linear infinite ;
+animation-direction: alternate;
+}
+
+@keyframes updown {
+     0%{
+        top: 80%
+     }
+     100%{
+        top: 88%
+     }
+}
+
+
+
+.simple{
+
+
+background-color: #F6F9F9;
+}
+
+.simple h1{
+padding-top: 50px;
+
+font-size: 50px;
+
+font-weight: 400;
+}
+.simple p{
+    
+font-size: 24px;
+    
+font-weight: 400;
+    
+color: #999999;
+    
+padding-top: 17px;
+}
+
+
+.devices{
+
+padding: 50px;
+}
+.decive-icon{
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a5ff+0,00a5ff+50,3ab6ff+50,3ab6ff+100 */
+background: #00a5ff; /* Old browsers */
+background: -moz-linear-gradient(left,  #00a5ff 0%, #00a5ff 50%, #3ab6ff 50%, #3ab6ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #00a5ff 0%,#00a5ff 50%,#3ab6ff 50%,#3ab6ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #00a5ff 0%,#00a5ff 50%,#3ab6ff 50%,#3ab6ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a5ff', endColorstr='#3ab6ff',GradientType=1 ); /* IE6-9 */
+
+
+    
+height: 95px;
+    
+width: 100px;
+    
+margin: auto;
+    
+margin-bottom: 16px;
+    
+display: flex;
+    
+align-items: center;
+    
+justify-content: center;
+}
+.decive-icon i{
+    font-size: 50px;
+    color: #fff;
+}
+.devices h3{font-weight: 300;margin: 0;font-size: 29px;}
+.devices p{
+
+font-size: 17px;
+
+margin: 0;
+
+color: #999999;
+}
+.item{
+    position: relative;
+}
+.item::after{
+    content:'';
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    background-color: #5686B1;
+    transition: .6s all ease-in-out;
+}
+
+
+.item::before{
+    content:'';
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    background-color: #5686B1;
+    transition: .6s all ease-in-out;
+}
+
+.item:hover::after{
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+}
+
+.item:hover::before{
+    width: 50%;
+    height: 100%;
+}
+.item-info{
+    opacity: 0;
+position: absolute;
+    
+top: 60%;
+    
+left: 50%;
+    
+transform: translate(-50%, -50%);
+transition: .4s all ease-in-out;
+}
+.item-info ul{
+
+list-style: none;
+
+padding: 0;
+
+margin: 0;
+
+display: flex;
+
+justify-content: space-between;
+
+width: 69px;
+}
+.item-info li{
+
+height: 30px;
+
+width: 30px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border: 2px solid #fff;
+
+border-radius: 7px;
+}
+.item-info li a{
+
+color: #FFF;
+}
+
+.item:hover .item-info{
+    opacity: 1;
+    top: 50%;
+    z-index: 1;
+}
+.showcase{
+    background-color: #F6F9F9;
+    padding: 50px;
+}
+.showcase h1{
+   
+margin: 0;
+   
+color: #2D3950;
+   
+font-weight: 400;
+   
+font-size: 45px;
+}
+.showcase p{
+    
+font-size: 21px;
+    
+color: #909090;
+    
+text-transform: capitalize;
+    
+font-weight: 300;
+}
+.form{
+    background-image: url(../images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+/* .form::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: #2d34429e;
+    z-index: -1;
+} */
+.form h1{
+
+color: #Fff;
+
+margin-top: 40px;
+
+margin-bottom: 0;
+}
+.form p{
+
+color: #918c8c;
+
+padding-bottom: 23px;
+
+padding-top: 5px;
+}
+
+
+.form-input{
+    
+width: 90%;
+    
+margin: -5px 0;
+    
+border-radius: 0px;
+    
+border: 1px solid;
+    
+outline: 0;
+    
+padding: 11px 7px;
+    
+background: none;
+    
+border-color: #918c8c;
+color: #fff;
+}
+.form-input:hover{
+   
+
+
+}
+.check{display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 30px;
+}
+.check input{
+
+border: 1px solid;
+
+border-color: #00a5ff;
+
+border-radius: 27px;
+
+padding: 5px 23px;
+
+font-size: 24px;
+
+font-weight: 400;
+
+background: none;
+
+color: #999999;
+
+text-transform: capitalize;
+
+color: #fff;
+}
+.check input:hover{
+    background-color: #00a5ff;
+    color:#fff;
+}
+.checkinfo{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: baseline;
+
+padding-left: 6%;
+
+width: 33%;
+}
+.checkinfo input{
+
+}
+.checkinfo p{color: #8b8181;text-transform: capitalize;}
+
+.overlay{
+    background-color: #262e3f6c;
+}
+
+footer{
+    
+
+}
+.ftr-text{margin: 13% 0;}
+.ftr-text h5{
+
+text-transform: capitalize;
+
+font-weight: 400;
+
+font-size: 18px;
+}
+.ftr-icon{margin: 13% 0;}
+.ftr-icon ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+
+color: #00A5FF;
+}
+.ftr-icon ul li{
+    font-size: 20px;
+}
+.ftr-icon ul li i{
+
+}
